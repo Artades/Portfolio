@@ -1,0 +1,37 @@
+.circles {
+    width: 100%;
+}
+
+.circles div {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    animation: circleAnim 5s infinite ease-in-out;
+}
+
+.circles div:first-child {
+    left: -400px;
+    top: -250px;
+    box-shadow: 130px 70px 350px var(--primary-color);
+}
+
+.circles div:last-child {
+    right: -400px;
+    bottom: -250px;
+    box-shadow: -130px -70px 350px var(--primary-color);
+}
+
+
+@keyframes circleAnim {
+    0% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.25;
+    }
+}
